@@ -40,7 +40,7 @@ def get_variable_name(read_variable_op):
       return op.name
     if op.type == 'Placeholder':
       return op.name.split('/ReadVariableOp/')[1]
-    assert len(op.inputs) == 1
+    #assert len(op.inputs) == 1
     op = op.inputs[0].op
 
 
